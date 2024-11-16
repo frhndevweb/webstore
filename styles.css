@@ -1,0 +1,106 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0f14; /* Background hitam pekat */
+    color: #c9d1d9; /* Warna teks abu-abu terang */
+    line-height: 1.6;
+}
+
+header {
+    background: #1b1f23; /* Warna abu-abu gelap */
+    color: #c94c4c; /* Warna merah tua untuk teks header */
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #2b303b; /* Garis pembatas */
+}
+
+.product-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #1f2733; /* Warna abu-abu lebih gelap */
+    border: 1px solid #3d4752;
+    padding: 15px;
+    border-radius: 8px;
+    color: #d1d5da; /* Warna teks terang */
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(201, 76, 76, 0.3); /* Bayangan merah tua */
+}
+
+.add-to-cart-button,
+.clear-cart-button,
+.whatsapp-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.add-to-cart-button {
+    background-color: #c94c4c;
+    color: #0a0f14;
+}
+
+.add-to-cart-button:hover {
+    background-color: #b04040;
+    transform: scale(1.05);
+}
+
+.added {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.clear-cart-button {
+    background-color: #a83232;
+    color: white;
+}
+
+.clear-cart-button:hover {
+    background-color: #902b2b;
+    transform: scale(1.05);
+}
+
+.whatsapp-button {
+    background-color: #c94c4c;
+    color: white;
+}
+
+.whatsapp-button:hover {
+    background-color: #b04040;
+    transform: scale(1.05);
+}
+
+#cart-items-container {
+    padding: 20px;
+    background-color: #1b1f23;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#cart-items p {
+    margin: 5px 0;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.product-card,
+#cart-items-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
