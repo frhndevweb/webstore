@@ -47,7 +47,7 @@ function continueToWhatsApp() {
         return;
     }
 
-    let message = 'Halo, saya ingin memesan produk berikut:%0A';
+    let message = '/Halo, saya ingin memesan produk berikut:%0A';
     savedCart.forEach((item, index) => {
         message += `${index + 1}. ${item.name} - Rp${item.price.toLocaleString()}%0A`;
     });
