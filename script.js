@@ -78,7 +78,7 @@ function viewDemo(productType) {
     let demoUrl;
     switch (productType) {
         case 'portofolio':
-            demoUrl = 'https://frhndevweb.github.io/Portofolio-2';
+            demoUrl = 'https://portofolio-2-five.vercel.app';
             break;
         case 'blog':
             demoUrl = 'https://frhndevweb.github.io';
