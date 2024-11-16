@@ -74,5 +74,24 @@ function updateButtonStatus() {
     });
 }
 
+function viewDemo(productType) {
+    let demoUrl;
+    switch (productType) {
+        case 'portofolio':
+            demoUrl = 'https://frhndevweb.github.io/Portofolio-2';
+            break;
+        case 'blog':
+            demoUrl = 'https://frhndevweb.github.io';
+            break;
+        case 'custom':
+            demoUrl = 'https://frhndevweb.netlify.app';
+            break;
+        default:
+            alert('Demo tidak tersedia.');
+            return;
+    }
+    window.open(demoUrl, '_blank');
+}
+
 displayCart();
 updateButtonStatus();
