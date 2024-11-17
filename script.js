@@ -52,7 +52,7 @@ function continueToWhatsApp() {
         message += `${index + 1}. ${item.name} - Rp${item.price.toLocaleString()}%0A`;
     });
 
-    const waNumber = '+6282324473889';
+    const waNumber = '+6282241003726';
     const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(waLink, '_blank');
