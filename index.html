@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible=IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Store</title>
+    <link rel="stylesheet" href="dark_minecraft_styles.css">
+    <link rel="stylesheet" href="centered_popup_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Han Store</h1>
+        </div>
+        <nav>
+            <a href="#products">Produk</a>
+            <a href="javascript:void(0);" onclick="toggleCartPopup()">Keranjang</a>
+        </nav>
+    </header>
+
+    <section id="products" class="product-section">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Portofolio</h3>
+                <p>Rp. 200.000</p>
+                <button class="add-to-cart-button" data-product-name="Portofolio" onclick="addToCart('Portofolio', 200000)">Tambah ke Keranjang</button>
+                <button class="view-demo-button" onclick="viewDemo('portfolio')">Lihat Demo</button>
+            </div>
+            <div class="product-card">
+                <h3>Blog</h3>
+                <p>Rp. 150.000</p>
+                <button class="add-to-cart-button" data-product-name="Blog" onclick="addToCart('Blog', 150000)">Tambah ke Keranjang</button>
+                <button class="view-demo-button" onclick="viewDemo('blog')">Lihat Demo</button>
+            </div>
+            <div class="product-card">
+                <h3>Custom Tampilan Web</h3>
+                <p>Harga: Tergantung</p>
+                <button class="add-to-cart-button" data-product-name="Custom Tampilan Web" onclick="addToCart('Custom Tampilan Web', 350000)">Tambah ke Keranjang</button>
+                <button class="view-demo-button" onclick="viewDemo('custom')">Lihat Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Demo -->
+    <div id="demo-popup" class="demo-popup">
+        <iframe id="demo-iframe" src=""></iframe>
+        <button onclick="closeDemoPopup()" class="close-popup-button">Tutup</button>
+    </div>
+
+    <!-- Popup Keranjang -->
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <h2>Barang di Keranjang</h2>
+            <div id="cart-items"></div>
+            <div class="cart-actions">
+                <button id="wa-button" onclick="continueToWhatsApp()" class="whatsapp-button">Beli</button>
+                <button onclick="clearCart()" class="clear-cart-button">Kosongkan Keranjang</button>
+                <button onclick="toggleCartPopup()" class="close-popup-button">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="centered_popup_script.js"></script>
+</body>
+</html>
