@@ -1,6 +1,4 @@
-
-/* Gaya Global */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* Font Pixelated */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +8,7 @@
 
 body {
     font-family: 'VT323', monospace;
-    background: linear-gradient(180deg, #2b2b2b, #1a1a1a); /* Darker tones */
+    background: linear-gradient(180deg, #2b2b2b, #1a1a1a);
     color: #eaeaea;
     display: flex;
     flex-direction: column;
@@ -18,10 +16,9 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
     width: 100%;
-    background: url('https://i.imgur.com/Q8k2X84.png') repeat-x; /* Darker grass and dirt */
+    background: url('gambar/th.jpeg') repeat-x;
     color: #eaeaea;
     text-align: center;
     padding: 20px 0;
@@ -29,7 +26,6 @@ header {
     border-bottom: 5px solid #3b3b3b;
 }
 
-/* Navigasi */
 nav a {
     color: #eaeaea;
     font-size: 1.2rem;
@@ -47,7 +43,6 @@ nav a:hover {
     color: #a8ff77;
 }
 
-/* Produk */
 .product-section {
     width: 100%;
     max-width: 1200px;
@@ -69,7 +64,7 @@ nav a:hover {
 }
 
 .product-card {
-    background: url('https://i.imgur.com/TMiDntA.png') center/cover; /* Blok tekstur tetap */
+    background: url('gambar/th.jpeg') center/cover;
     border: 2px solid #2a2a2a;
     border-radius: 8px;
     padding: 20px;
@@ -109,7 +104,6 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Popup Keranjang */
 .cart-popup {
     display: none;
     position: fixed;
@@ -154,7 +148,6 @@ nav a:hover {
     background-color: #2a2a2a;
 }
 
-/* Animasi */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
