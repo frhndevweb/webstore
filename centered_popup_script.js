@@ -31,7 +31,7 @@ function continueToWhatsApp() {
     cartItems.forEach(item => {
         message += `${item.productName} - Rp ${item.price.toLocaleString()}\n`;
     });
-    window.open(`https://wa.me/628123456789?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/+6282241003726?text=${encodeURIComponent(message)}`, '_blank');
 }
 
 const demoLinks = {
